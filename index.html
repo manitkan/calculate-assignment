@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+      .blue-highligh {
+        background-color: #66d9ff;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+    </style> 
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <p>A :  <input type="text" name="input_a" id="input_a"></p>
+    <p>B :  <input type="text" name="input_b" id="input_b"></p>
+    <button class="highligh" id="btn_plus">+</button> 
+    <button class="highligh" id="btn_minus">-</button> 
+    <button class="highligh" id="btn_multiply">*</button> 
+    <button class="highligh" id="btn_divide">/</button> 
+    <button class="highligh" id="btn_pow">Pow</button>
+    <p>Result : <input type="text" name="result" id="result"></p>
+    <p><button id="btn_load">Load</button> <button id="btn_save">Save</button></p>
+    <h4 id = "message"></h4>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
